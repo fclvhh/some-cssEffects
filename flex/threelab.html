@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三栏布局</title>
+  <style>
+    .wrap {
+      max-width:80%;
+      margin:0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .wrap .head,.foot {
+      width:100%;
+      border: 1px solid #ccc;
+      height: 30px;
+      background: pink;
+    }
+    .wrap .main {
+      height:400px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .wrap .aside1 {
+      width: 100px;
+      background: blue;
+      order: 1;
+    }
+    .wrap .aside2 {
+      width: 100px;
+      background:yellowgreen;
+      order: 3;
+    }
+    .wrap .center {
+      flex:1;
+      order: 2;
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">header</div>
+    <div class="main">
+      <div class="center">center</div>
+      <div class="aside1">aside-1</div>
+      <div class="aside2">aside-2</div>    
+    </div>
+    <div class="foot">foot</div>
+  </div>
+</body>
+</html>
