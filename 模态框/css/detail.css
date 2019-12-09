@@ -1,0 +1,13 @@
+.mask h2 {
+  padding:10px;
+  border-bottom: 1px solid #ccc;
+}
+.mask .close {
+  float: right;
+  font-size: 14px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.mask .slogan {
+  padding:20px;
+}

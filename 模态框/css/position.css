@@ -1,0 +1,27 @@
+.mask {
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left:0;
+  /* 上面是固定定位,强行让元素距离
+      视口每个角的距离一致, 并且距离都是0
+      那么只有铺满视口才能 */
+  border:1px solid black;
+  background-color:rgba(0,0,0,.3);
+  display:none;
+}
+.mask:target {
+  display: block;
+}
+.mask>.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* 上面代码是居中的经典套路 */
+  width: 70%;
+  max-height: 500px;
+  background: #fff;
+  border-radius: 4px;
+}
