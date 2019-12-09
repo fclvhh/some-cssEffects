@@ -1,0 +1,16 @@
+.tip {
+  position: relative;
+  cursor: pointer;
+}
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  background: #000;
+  color: #fff;
+  width: 200px;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 4px;
+  display: none;
+}

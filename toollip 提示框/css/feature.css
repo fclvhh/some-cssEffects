@@ -1,0 +1,13 @@
+.tip:hover .tooltip {
+  display: block;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  /* 往上靠近16px */
+  left: 10px;
+  border: 8px solid transparent;
+  border-bottom-color: #000;
+}
