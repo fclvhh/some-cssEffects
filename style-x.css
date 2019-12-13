@@ -1,0 +1,16 @@
+.router {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 49px;
+  background: #ccc;
+}
+.nav-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border: 1px solid;
+  height: 44px;
+}

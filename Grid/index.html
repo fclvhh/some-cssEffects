@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>两栏布局</title>
+  <style>
+    .wrap {
+  display:grid;
+  height:100vh;
+  
+  grid-template-rows:40px auto 40px;
+  grid-template-columns:200px auto;  
+}
+.head {
+  grid-row-start:1;
+  grid-row-end:2;
+  grid-column-start:1;
+  grid-column-end:3;
+  background:red;
+}
+.foot {
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:1;
+  grid-column-end:3;
+  background:green;
+}
+.aside {
+   grid-row-start:2;
+   grid-row-end:3;
+   grid-column-start:1;
+   grid-column-end:2;
+   background:yellow;  
+}
+.main {
+  grid-row-start:2;
+   grid-row-end:3;
+   grid-column-start:2;
+   grid-column-end:3;
+  background:pink;
+}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">head</div>
+    <div class="aside">aside</div>
+    <div class="main">main</div>
+    <div class="foot">foot</div>
+  </div>
+</body>
+</html>
